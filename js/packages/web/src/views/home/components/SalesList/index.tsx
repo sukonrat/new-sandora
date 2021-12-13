@@ -31,7 +31,7 @@ export const SalesListView = () => {
   return (
     <>
       <Banner
-        src="/nft-banner.gif"
+        src="/Solana_NFT_banner.gif"
         headingText="Explore Thousands Of Digital Art And Collectibles."
         subHeadingText="Buy and sell NFTs and browse our massive collection of digital art and collectibles by top artists from around the world."
         actionComponent={<HowToBuyModal buttonClassName="secondary-btn" />}
@@ -39,7 +39,11 @@ export const SalesListView = () => {
       />
       <Layout>
         <Content style={{ display: 'flex', flexWrap: 'wrap' }}>
+<<<<<<< HEAD
+          <Col style={{ width: '100%', marginTop: 32, marginLeft: 80 }}>
+=======
           <Col style={{ width: '100%', marginTop: 50 , marginBottom: 50}}>
+>>>>>>> 10e1078225166130b01cc4fe3b7849748727a17e
             <Row>
               <Tabs
                 activeKey={activeKey}
