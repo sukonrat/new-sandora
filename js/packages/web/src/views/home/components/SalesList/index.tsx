@@ -39,11 +39,7 @@ export const SalesListView = () => {
       />
       <Layout>
         <Content style={{ display: 'flex', flexWrap: 'wrap' }}>
-<<<<<<< HEAD
           <Col style={{ width: '100%', marginTop: 32}}>
-=======
-          <Col style={{ width: '100%', marginTop: 50 , marginBottom: 50}}>
->>>>>>> 10e1078225166130b01cc4fe3b7849748727a17e
             <Row>
               <Tabs
                 activeKey={activeKey}
