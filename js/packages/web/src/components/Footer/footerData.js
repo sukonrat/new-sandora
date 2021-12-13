@@ -9,11 +9,11 @@ export const footerConf = {
       links: [
         {
           label: 'About',
-          url: 'www.solana.com',
+          url: 'www.sandora.io',
         },
         {
           label: 'Terms of service',
-          url: 'www.solana.com',
+          url: 'www.sandora.io',
         },
       ],
     },
@@ -22,19 +22,19 @@ export const footerConf = {
       links: [
         {
           label: 'FAQ',
-          url: 'www.solana.com',
+          url: 'www.sandora.io',
         },
         {
           label: 'Support',
-          url: 'www.solana.com',
+          url: 'www.sandora.io',
         },
         {
           label: 'Privacy policy',
-          url: 'www.solana.com',
+          url: 'www.sandora.io',
         },
         {
           label: 'Your purchases',
-          url: 'www.solana.com',
+          url: 'www.sandora.io',
         },
       ],
     },
@@ -43,15 +43,15 @@ export const footerConf = {
       links: [
         {
           label: 'Instagram',
-          url: 'www.solana.com',
+          url: 'www.sandora.io',
         },
         {
           label: 'Twitter',
-          url: 'www.solana.com',
+          url: 'www.sandora.io',
         },
         {
           label: 'Discord',
-          url: 'www.solana.com',
+          url: 'www.sandora.io',
         },
       ],
     },

@@ -11,6 +11,7 @@ import { HowToBuyModal } from '../../../../components/HowToBuyModal';
 import { useAuctionsList } from './hooks/useAuctionsList';
 import { AuctionRenderCard } from '../../../../components/AuctionRenderCard';
 
+import { Footer } from '../../../../components/Footer';
 const { TabPane } = Tabs;
 const { Content } = Layout;
 
@@ -38,7 +39,7 @@ export const SalesListView = () => {
       />
       <Layout>
         <Content style={{ display: 'flex', flexWrap: 'wrap' }}>
-          <Col style={{ width: '100%', marginTop: 32 }}>
+          <Col style={{ width: '100%', marginTop: 50 , marginBottom: 50}}>
             <Row>
               <Tabs
                 activeKey={activeKey}
@@ -84,7 +85,9 @@ export const SalesListView = () => {
             </Row>
           </Col>
         </Content>
+        
       </Layout>
+      <Footer/>
     </>
   );
 };
