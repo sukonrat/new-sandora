@@ -88,8 +88,7 @@ export const SalesListView = () => {
               </div>
             </Row>
           </Col>
-        </Content>
-        
+        </Content>       
       </Layout>
       <Footer/>
     </>
