@@ -105,7 +105,7 @@ export const SalesListView = () => {
           </Col>
           <Col  style={{ width: '100%', marginTop: 50, marginLeft: 80 , marginBottom: 50}}>
           <Row>
-            <h1 style={{color: 'white', textAlign: 'center'}}>Every Industry Can Benefit From NFT</h1>
+            <h1 style={{color: 'white', textAlign: 'center'}}>Browse by category</h1>
               <div className="artwork-grid" >
                     <Link
                       to={`/`}
@@ -283,7 +283,7 @@ export const SalesListView = () => {
         </Content>       
       </Layout>
       <Banner
-        src="/banner.png"
+        s src="/Solana_NFT_banner.gif"
         headingText="Start your own collection today"
         subHeadingText="Sandora is a shared liquidity NFT market smart contract which is used by multiple websites to provide the users the best possible experience."
         actionComponent={<HowToBuyModal buttonClassName="secondary-btn" />}
