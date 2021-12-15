@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Button, Menu, Modal } from 'antd';
+import { Button, Menu, Modal, Popover, Select} from 'antd';
 import { useWallet } from '@solana/wallet-adapter-react';
 import { Notifications } from '../Notifications';
 import useWindowDimensions from '../../utils/layout';
@@ -14,11 +14,179 @@ import {
 import { ConnectButton } from '@oyster/common';
 import { MobileNavbar } from '../MobileNavbar';
 
+const btnStyle: React.CSSProperties = {
+  border: 'none',
+  height: 40,
+  paddingRight: 50,
+};
+
+const menuIcon: React.CSSProperties = {
+  width: 35 , 
+  paddingRight:10,
+};
+
+
 const getDefaultLinkActions = (connected: boolean) => {
   return [
     <Link to={`/`} key={'explore'}>
-      <Button className="app-btn">Explore</Button>
+      <Popover
+        trigger="click"
+        placement="bottomRight"
+        content={
+          <div
+            style={{
+              width: 200,
+            }}
+          >
+             <Link to={`/`}>
+            <Button
+              className="metaplex-button-default"
+              style={btnStyle}
+            >
+            <img src={'nft.png'} style={menuIcon}/>
+              All NFTS
+            </Button>
+         </Link>
+
+            <Link to={`/`}>
+            <Button
+              className="metaplex-button-default"
+              style={btnStyle}
+            >
+              <img src={'arts.png'} style={menuIcon}/>
+              Arts
+            </Button>
+            </Link>
+
+            <Link to={`/`}>
+            <Button
+              className="metaplex-button-default"
+              style={btnStyle}
+            >
+              <img src={'cards.png'} style={menuIcon}/>
+             Cards
+            </Button>
+            </Link>
+
+            <Link to={`/`}>
+            <Button
+              className="metaplex-button-default"
+              style={btnStyle}
+            >
+               <img src={'games.png'} style={menuIcon}/>
+              Games
+            </Button>
+            </Link>
+
+            <Link to={`/`}>
+            <Button
+              className="metaplex-button-default"
+              style={btnStyle}
+            >
+              <img src={'sports.png'} style={menuIcon}/>
+              Sports
+            </Button>
+            </Link>
+
+            <Link to={`/`}>
+            <Button
+              className="metaplex-button-default"
+              style={btnStyle}
+            >
+              <img src={'tiktok.png'} style={menuIcon}/>
+              Tiktok
+            </Button>
+            </Link>
+
+            <Link to={`/`}>
+            <Button
+              className="metaplex-button-default"
+              style={btnStyle}
+            >
+              <img src={'memes.png'} style={menuIcon}/>
+              Memes
+            </Button>
+            </Link>
+
+            <Link to={`/`}>
+            <Button
+              className="metaplex-button-default"
+              style={btnStyle}
+            >
+              <img src={'fashion.png'} style={menuIcon}/>
+              Fashion
+            </Button>
+            </Link>
+
+            <Link to={`/`}>
+            <Button
+              className="metaplex-button-default"
+              style={btnStyle}
+            >
+              <img src={'ticketing.png'} style={menuIcon}/>
+              Ticketing
+            </Button>
+            </Link>
+
+            <Link to={`/`}>
+            <Button
+              className="metaplex-button-default"
+              style={btnStyle}
+            >
+              <img src={'music.png'} style={menuIcon}/>
+              Music & SFX
+            </Button>
+            </Link>
+
+            <Link to={`/`}>
+            <Button
+              className="metaplex-button-default"
+              style={btnStyle}
+            >
+              <img src={'virtual-worlds.png'} style={menuIcon}/>
+              Virtual Worlds
+            </Button>
+            </Link>
+
+            <Link to={`/`}>
+            <Button
+              className="metaplex-button-default"
+              style={btnStyle}
+            >
+              <img src={'domain-name.png'} style={menuIcon}/>
+              Domain names
+            </Button>
+            </Link>
+
+            <Link to={`/`}>
+            <Button
+              className="metaplex-button-default"
+              style={btnStyle}
+            >
+              <img src={'collectibles.png'} style={menuIcon}/>
+              Collectibles
+            </Button>
+            </Link>
+
+            <Link to={`/`}>
+            <Button
+              className="metaplex-button-default"
+              style={btnStyle}
+            >
+              <img src={'metaverse.png'} style={menuIcon}/>
+              Metaverse NFTs
+            </Button>
+            </Link>
+          </div>
+        }
+      >
+       <Button className="app-btn"> Explore</Button>
+
+      </Popover>
+    
+  
     </Link>,
+
     <Link to={`/artworks`} key={'artwork'}>
       <Button className="app-btn">{connected ? 'My Items' : 'Artwork'}</Button>
     </Link>,
