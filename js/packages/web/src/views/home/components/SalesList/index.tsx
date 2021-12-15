@@ -283,7 +283,7 @@ export const SalesListView = () => {
         </Content>       
       </Layout>
       <Banner
-        src="/Solana_NFT_banner.gif"
+        src="/banner.gif"
         headingText="Start your own collection today"
         subHeadingText="Sandora is a shared liquidity NFT market smart contract which is used by multiple websites to provide the users the best possible experience."
         actionComponent={<HowToBuyModal buttonClassName="secondary-btn" />}
