@@ -31,7 +31,7 @@ const getDefaultLinkActions = (connected: boolean) => {
     <Link to={`/`} key={'explore'}>
       <Popover
         trigger="click"
-        placement="bottomRight"
+        placement="bottomLeft"
         content={
           <div
             style={{
