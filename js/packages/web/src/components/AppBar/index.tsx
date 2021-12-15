@@ -193,6 +193,11 @@ const getDefaultLinkActions = (connected: boolean) => {
     <Link to={`/artists`} key={'artists'}>
       <Button className="app-btn">Creators</Button>
     </Link>,
+     <input 
+     type = "search" 
+     placeholder = "  Search " 
+    style={{width: 250, height: 30, borderRadius: 10, marginTop: 20}}
+   />
   ];
 };
 
@@ -278,7 +283,7 @@ export const MetaplexMenu = () => {
 export const LogoLink = () => {
   return (
     <Link to={`/`}>
-      <img src={'sandora-icon.png'} style={{width: 50 }}/>
+      <img src={'sandora-logo.png'} style={{width: 150 }}/>
     </Link>
   );
 };
