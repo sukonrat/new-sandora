@@ -1,5 +1,5 @@
 import { useWallet } from '@solana/wallet-adapter-react';
-import { Col, Layout, Row, Tabs } from 'antd';
+import { Col, Layout, Row, Tabs, Card } from 'antd';
 import { Link } from 'react-router-dom';
 import React, { useState } from 'react';
 
@@ -10,8 +10,25 @@ import { HowToBuyModal } from '../../../../components/HowToBuyModal';
 
 import { useAuctionsList } from './hooks/useAuctionsList';
 import { AuctionRenderCard } from '../../../../components/AuctionRenderCard';
-
 import { Footer } from '../../../../components/Footer';
+
+const cardStyle: React.CSSProperties = {
+  width: '80%',
+   height: '90%'
+};
+
+const cardImg: React.CSSProperties = {
+  width: 150,
+  marginLeft: '15%'
+};
+
+const cardTitle: React.CSSProperties = {
+  textAlign: 'center', 
+  marginTop: 0, 
+  marginBottom: 20
+};
+
+
 const { TabPane } = Tabs;
 const { Content } = Layout;
 
@@ -86,9 +103,186 @@ export const SalesListView = () => {
               </div>
             </Row>
           </Col>
+          <Col  style={{ width: '100%', marginTop: 50, marginLeft: 80 , marginBottom: 50}}>
+          <Row>
+            <h1 style={{color: 'white', textAlign: 'center'}}>Every Industry Can Benefit From NFT</h1>
+              <div className="artwork-grid" >
+                    <Link
+                      to={`/`}
+                    >
+                     <Card hoverable={true} className={`auction-render-card`} bordered={false} style={ cardStyle }>
+                      <div className={'card-art-info'} >
+                        <div className="auction-gray-wrapper" style={{backgroundColor: '#ff8000'}}>
+                          <img src={'arts.png'} style={ cardImg } />                                           
+                          <div className={'art-name'} style={ cardTitle}>Arts</div>                        
+                        </div>
+                      </div>
+                    </Card>                    
+                    </Link>               
+            
+                    <Link
+                      to={`/`}
+                    >
+                     <Card hoverable={true} className={`auction-render-card`} bordered={false} style={ cardStyle }>
+                      <div className={'card-art-info'} >
+                        <div className="auction-gray-wrapper" style={{backgroundColor: '#b700ff'}}>
+                          <img src={'cards.png'} style={ cardImg } />                                           
+                          <div className={'art-name'} style={cardTitle}>Cards</div>                        
+                        </div>
+                      </div>
+                    </Card>                    
+                    </Link>  
+
+                    <Link
+                      to={`/`}
+                    >
+                     <Card hoverable={true} className={`auction-render-card`} bordered={false} style={ cardStyle }>
+                      <div className={'card-art-info'} >
+                        <div className="auction-gray-wrapper" style={{backgroundColor: ' #1fa9ff'}}>
+                          <img src={'games.png'} style={ cardImg } />                                           
+                          <div className={'art-name'} style={cardTitle}>Games</div>                        
+                        </div>
+                      </div>
+                    </Card>                    
+                    </Link>         
+
+                    <Link
+                      to={`/`}
+                    >
+                     <Card hoverable={true} className={`auction-render-card`} bordered={false} style={ cardStyle }>
+                      <div className={'card-art-info'} >
+                        <div className="auction-gray-wrapper" style={{backgroundColor: '#00ff6e'}}>
+                          <img src={'sports.png'} style={ cardImg } />                                           
+                          <div className={'art-name'} style={cardTitle}>Sports</div>                        
+                        </div>
+                      </div>
+                    </Card>                    
+                    </Link> 
+
+                    <Link
+                      to={`/`}
+                    >
+                     <Card hoverable={true} className={`auction-render-card`} bordered={false} style={ cardStyle }>
+                      <div className={'card-art-info'} >
+                        <div className="auction-gray-wrapper" style={{backgroundColor: '#002aff'}}>
+                          <img src={'tiktok.png'} style={ cardImg } />                                           
+                          <div className={'art-name'} style={cardTitle}>Tiktok</div>                        
+                        </div>
+                      </div>
+                    </Card>                    
+                    </Link>    
+
+                    <Link
+                      to={`/`}
+                    >
+                     <Card hoverable={true} className={`auction-render-card`} bordered={false} style={ cardStyle }>
+                      <div className={'card-art-info'} >
+                        <div className="auction-gray-wrapper" style={{backgroundColor: '#ffd500'}}>
+                          <img src={'memes.png'} style={ cardImg } />                                           
+                          <div className={'art-name'} style={cardTitle}>Memes</div>                        
+                        </div>
+                      </div>
+                    </Card>                    
+                    </Link>  
+
+
+                    <Link
+                      to={`/`}
+                    >
+                     <Card hoverable={true} className={`auction-render-card`} bordered={false} style={ cardStyle }>
+                      <div className={'card-art-info'} >
+                        <div className="auction-gray-wrapper" style={{backgroundColor: '#ff0037'}}>
+                          <img src={'fashion.png'} style={ cardImg } />                                           
+                          <div className={'art-name'} style={cardTitle}>Fashion</div>                        
+                        </div>
+                      </div>
+                    </Card>                    
+                    </Link>    
+
+                    <Link
+                      to={`/`}
+                    >
+                     <Card hoverable={true} className={`auction-render-card`} bordered={false} style={ cardStyle }>
+                      <div className={'card-art-info'} >
+                        <div className="auction-gray-wrapper" style={{backgroundColor: '#314cff'}}>
+                          <img src={'ticketing.png'} style={ cardImg } />                                           
+                          <div className={'art-name'} style={cardTitle}>Ticketing</div>                        
+                        </div>
+                      </div>
+                    </Card>                    
+                    </Link>   
+
+                    <Link
+                      to={`/`}
+                    >
+                     <Card hoverable={true} className={`auction-render-card`} bordered={false} style={ cardStyle }>
+                      <div className={'card-art-info'} >
+                        <div className="auction-gray-wrapper" style={{backgroundColor: '#3ec420'}}>
+                          <img src={'music.png'} style={ cardImg } />                                           
+                          <div className={'art-name'} style={cardTitle}>Music & SFX</div>                        
+                        </div>
+                      </div>
+                    </Card>                    
+                    </Link>                                                 
+              
+
+              <Link
+                      to={`/`}
+                    >
+                     <Card hoverable={true} className={`auction-render-card`} bordered={false} style={ cardStyle }>
+                      <div className={'card-art-info'} >
+                        <div className="auction-gray-wrapper" style={{backgroundColor: '#e44d23'}}>
+                          <img src={'virtual-worlds.png'} style={ cardImg } />                                           
+                          <div className={'art-name'} style={cardTitle}>Virtual Worlds</div>                        
+                        </div>
+                      </div>
+                    </Card>                    
+                    </Link> 
+
+                    <Link
+                      to={`/`}
+                    >
+                     <Card hoverable={true} className={`auction-render-card`} bordered={false} style={ cardStyle }>
+                      <div className={'card-art-info'} >
+                        <div className="auction-gray-wrapper" style={{backgroundColor: '#852bfa'}}>
+                          <img src={'domain-name.png'} style={ cardImg } />                                           
+                          <div className={'art-name'} style={cardTitle}>Domain Names</div>                        
+                        </div>
+                      </div>
+                    </Card>                    
+                    </Link>  
+
+                    <Link
+                      to={`/`}
+                    >
+                     <Card hoverable={true} className={`auction-render-card`} bordered={false} style={ cardStyle }>
+                      <div className={'card-art-info'} >
+                        <div className="auction-gray-wrapper" style={{backgroundColor: '#ff00ea'}}>
+                          <img src={'collectibles.png'} style={ cardImg } />                                           
+                          <div className={'art-name'} style={cardTitle}>Collectibles</div>                        
+                        </div>
+                      </div>
+                    </Card>                    
+                    </Link> 
+
+                    <Link
+                      to={`/`}
+                    >
+                     <Card hoverable={true} className={`auction-render-card`} bordered={false} style={ cardStyle }>
+                      <div className={'card-art-info'} >
+                        <div className="auction-gray-wrapper" style={{backgroundColor: '#00a043'}}>
+                          <img src={'metaverse.png'} style={ cardImg } />                                           
+                          <div className={'art-name'} style={cardTitle}>Metaverse NFTs</div>                        
+                        </div>
+                      </div>
+                    </Card>                    
+                    </Link>         
+                    </div>                       
+            </Row>
+          </Col>
         </Content>       
       </Layout>
-      <Footer/>
+
     </>
   );
 };
