@@ -159,6 +159,7 @@ export const SalesListView = () => {
                     </Card>                    
                     </Link> 
 
+                    {/*  
                     <Link
                       to={`/`}
                     >
@@ -171,7 +172,7 @@ export const SalesListView = () => {
                       </div>
                     </Card>                    
                     </Link>    
-
+ */}
                     <Link
                       to={`/`}
                     >

@@ -203,7 +203,7 @@ const getDefaultLinkActions = (connected: boolean) => {
 
 const DefaultActions = ({ vertical = false }: { vertical?: boolean }) => {
   const { connected } = useWallet();
-  return (
+  return ( 
     <div
       style={{
         display: 'flex',
