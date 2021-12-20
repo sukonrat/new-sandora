@@ -41,7 +41,7 @@ section.ant-layout {
 section#main-layout.ant-layout {
   background-color: @bg-color !important;
   min-height: 100vh;
-
+/*
   span#static-header-gradient {
     display: none;
     position: absolute;
@@ -69,6 +69,7 @@ section#main-layout.ant-layout {
     background: linear-gradient(180deg, rgba(18, 18, 18, 0) 0%, @black-100 100%);
     display: none;
   }
+  */
 
   span#main-bg {
     display: none;
@@ -77,11 +78,13 @@ section#main-layout.ant-layout {
     right: 0;
     left: 0;
     height: 708px;
-    background: linear-gradient(180deg, rgba(18, 18, 18, 0) 0%, @black-100 100%);;
+   /* background: linear-gradient(180deg, rgba(18, 18, 18, 0) 0%, @black-100 100%);; */
+    background-color: #000;
     background-position: top left !important;
     background-size: cover !important;
     background-repeat: no-repeat !important;
-    filter: blur(220px);
+    filter: blur(220px); 
+  
     clip-path: inset(0 0 0 0);
   }
 }

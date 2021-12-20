@@ -283,7 +283,7 @@ export const MetaplexMenu = () => {
 export const LogoLink = () => {
   return (
     <Link to={`/`}>
-      <img src={'sandora-logo.png'} style={{width: 150 }}/>
+      <img src={'sandora-logo.png'} style={{width: 200 }}/>
     </Link>
   );
 };

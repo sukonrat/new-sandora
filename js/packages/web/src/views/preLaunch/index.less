@@ -5,7 +5,10 @@
 }
 
 body {
+  /*
   background-color: @black-100;
+  */
+  background-color: #000;
 }
 
 .mb32 {
@@ -18,15 +21,17 @@ body {
 
 &#pre-launch-layout {
   min-height: 100vh;
-  background: linear-gradient(100.3deg, fade(@prelauch-gradient-color, 32%) 8.28%, fade(@prelauch-gradient-color, 0%) 45%),
+ /* background: linear-gradient(100.3deg, fade(@prelauch-gradient-color, 32%) 8.28%, fade(@prelauch-gradient-color, 0%) 45%),
   linear-gradient(235.61deg, fade(@black-100, 0%) 34.14%, @black-100 72%) !important;
+  */
+  background-color: #000;
 
   .main-asset-banner {
     position: absolute;
     min-width: calc(50% - 128px);
     right: 0;
     top: 0;
-    background-image: url("/main-banner.png");
+   /* background-image: url("/main-banner.png"); */
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100% auto;
@@ -36,7 +41,10 @@ body {
       width: 100%;
     }
     .right-gradient {
+      /*
       background: linear-gradient(90deg, #121212 4.17%, rgba(18, 18, 18, 0) 100%);
+      */
+
       position: relative;
       width: 100%;
       height: 100%;
@@ -328,7 +336,9 @@ body {
 
   .ant-modal-body {
     border-radius: 12px;
+    /*
     background: linear-gradient(180deg, fade(@prelauch-gradient-color, 20%) 27.5%, fade(@prelauch-gradient-color, 0%) 100%), #2A2A2A;
+    */
     display: flex;
     flex-direction: column;
     align-items: center;

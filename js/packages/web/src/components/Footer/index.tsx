@@ -94,7 +94,6 @@ export const Footer = () => {
         {footerConf.showShopName ? (
           <div className="footer-community">
             <img src={'sandora-logo.png'} style={{width: 150}}/>                                           
-
             <div className="sub-header">
               {LABELS.STORE_NAME} NFT Marketplace
             </div>
