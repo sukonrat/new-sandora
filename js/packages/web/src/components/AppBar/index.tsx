@@ -193,6 +193,9 @@ const getDefaultLinkActions = (connected: boolean) => {
     <Link to={`/artists`} key={'artists'}>
       <Button className="app-btn">Creators</Button>
     </Link>,
+    <Link to={`/analytics`} key={'analytics'}>
+    <Button className="app-btn">Stats</Button>
+  </Link>,
      <input 
      type = "search" 
      placeholder = "  Search " 

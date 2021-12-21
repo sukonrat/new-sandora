@@ -10,7 +10,6 @@ import { HowToBuyModal } from '../../../../components/HowToBuyModal';
 
 import { useAuctionsList } from './hooks/useAuctionsList';
 import { AuctionRenderCard } from '../../../../components/AuctionRenderCard';
-import { Footer } from '../../../../components/Footer';
 
 const cardStyle: React.CSSProperties = {
   width: '80%',
@@ -108,7 +107,8 @@ export const SalesListView = () => {
             <h1 style={{color: 'white', textAlign: 'center'}}>Browse by category</h1>
               <div className="artwork-grid" >
                     <Link
-                      to={`/`}
+                      to={`/category`}
+                      key={'category'}
                     >
                      <Card hoverable={true} className={`auction-render-card`} bordered={false} style={ cardStyle }>
                       <div className={'card-art-info'} >

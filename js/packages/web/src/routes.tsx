@@ -18,7 +18,7 @@ import { AdminView } from './views/admin';
 import PackView from './views/pack';
 import { PackCreateView } from './views/packCreate';
 import { BillingView } from './views/auction/billing';
-// import { Category }  from './views/category/Category';
+ import { Category }  from './views/category';
 export function Routes() {
   const shouldEnableNftPacks = process.env.NEXT_ENABLE_NFT_PACKS === 'true';
   return (
@@ -78,9 +78,9 @@ export function Routes() {
             <Route path="/about" component={() => <StaticPageView />} />
             <Route path="/" component={() => <HomeView />} />
 
-            {/*
-            <Route exact path="/category/:id" component={() => <Category />} />
- */}
+       
+            <Route exact path="/category" component={() => <Category />} />
+
           </Switch>
         </Providers>
       </HashRouter>
