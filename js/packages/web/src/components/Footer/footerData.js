@@ -42,11 +42,23 @@ export const footerConf = {
       title: 'Follow us',
       links: [
         {
+          label: 'Facebook',
+          url: 'www.sandora.io',
+        },
+        {
           label: 'Instagram',
           url: 'www.sandora.io',
         },
         {
           label: 'Twitter',
+          url: 'www.sandora.io',
+        },
+        {
+          label: 'Youtube',
+          url: 'www.sandora.io',
+        },
+        {
+          label: 'Telegram',
           url: 'www.sandora.io',
         },
         {
