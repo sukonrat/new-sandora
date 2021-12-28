@@ -2054,7 +2054,7 @@ const WaitingStep = (props: {
     >
       <Progress type="circle" percent={progress} />
       <div className="waiting-title">
-        Your creation is being listed with Metaplex...
+        Your creation is being listed with Sandora...
       </div>
       <div className="waiting-subtitle">This can take up to 30 seconds.</div>
     </div>
